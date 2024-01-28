@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
         - name: two-tier-app
-          image: trainwithshubham/flaskapp:latest
+          image: shubzz/flask:latest
           env:
             - name: MYSQL_HOST
-              value: mysql          # this is your mysql's service clusture IP, Make sure to change it with yours
+              value: "10.102.179.15"          # this is your mysql's service clusture IP, Make sure to change it with yours
             - name: MYSQL_PASSWORD
               value: "admin"
             - name: MYSQL_USER
-              value: "root"
+              value: "admin"
             - name: MYSQL_DB
               value: "mydb"
           ports:
